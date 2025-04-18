@@ -1,0 +1,23 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+  --color-pink-500: #ec4899;
+  --color-pink-600: #db2777;
+  --color-purple-900: #4c1d95;
+  --color-indigo-900: #312e81;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

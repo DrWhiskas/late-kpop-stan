@@ -1,0 +1,123 @@
+/* Header styles */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: #4F29D2;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+}
+
+.header-container {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-pink-500);
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  padding: 0.5rem 2.5rem;
+  width: 16rem;
+  color: white;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-pink-500);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-gray-400);
+}
+
+.notification-button {
+  position: relative;
+}
+
+.notification-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-gray-300);
+  transition: color 0.2s;
+}
+
+.notification-icon:hover {
+  color: white;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-pink-500);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-button {
+  background-color: var(--color-pink-500);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.connect-button:hover {
+  background-color: var(--color-pink-600);
+  transform: scale(1.05);
+}
+
+.menu-button {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .menu-button {
+    display: none;
+  }
+}
