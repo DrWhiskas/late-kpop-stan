@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import './Home.css';
 import Features from '../../components/Features/Features';
+import ArtistCard from '../../components/ArtistCard/ArtistCard';
 
 export default function Home() {
 
@@ -22,9 +23,13 @@ export default function Home() {
 						</div>
 					</div>
 				</header>
-                <Features />
-                <h2 className = "text">Featured Artists</h2>
-                
+				<Features />
+				<h2 className="text">Featured Artists</h2>
+				<ArtistCard
+					name="Stray Kids"
+					image="https://k-gen.fr/wp-content/uploads/2025/05/stray-kids-hollow-03-felix.jpg"
+					followers='31.6M'
+				/>
 			</section>
 		);
 }

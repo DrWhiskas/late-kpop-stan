@@ -10,7 +10,7 @@ interface ArtistCardProps {
 	followers: string;
 }
 
-export default function ArtistCard({ name, image, description, followers }: ArtistCardProps) {
+export default function ArtistCard({ name, image, followers }: ArtistCardProps) {
 
      return (
     <div className="artist-card">
